@@ -9,7 +9,7 @@ export default function AboutScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#25292e',
@@ -25,4 +25,9 @@ const styles = StyleSheet.create({
   text: {
     backgroundColor: "green",
   },
+  button: {
+    backgroundColor: "blue",
+    padding: 12,
+    borderRadius: 8,
+  }
 })
