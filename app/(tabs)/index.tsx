@@ -1,5 +1,6 @@
 import { StyleSheet, View } from "react-native";
 
+import Button from "@/components/Button";
 import ImageViewer from "@/components/ImageViewer";
 
 
@@ -10,6 +11,10 @@ export default function Index() {
     <View style={styles.container}>
       <View style={styles.imageContainer}>
         <ImageViewer imgSource={PlaceholderImage} />
+      </View>
+      <View style={styles.footerContainer}>
+        <Button theme="primary" label="Choose a photo"></Button>
+        <Button label="Use this photo"></Button>
       </View>
     </View>
   );
@@ -23,6 +28,10 @@ const styles = StyleSheet.create({
   },
   imageContainer: {
     flex: 1,
+  },
+  footerContainer: {
+    flex: 1 / 3,
+    alignItems: "center",
   },
 });
 
